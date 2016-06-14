@@ -12,7 +12,7 @@ class Test(unittest.TestCase):
         a = 'p'
         b = 32
         result = code.addition(a, b)
-        self.assertEqual(result, 'NAN')
+        self.assertEqual(result, 'NaN')
 
     def test_number(self):
         a = 2
