@@ -138,7 +138,7 @@ The meta.json file tells where the editable files are.
 #### `requirements.txt`
 The requirements.txt describes the dependencies.
 
-```txt
+```
     unittest2==1.1.0
 ```
 
