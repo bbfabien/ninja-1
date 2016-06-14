@@ -140,7 +140,6 @@ The requirements.txt describes the dependencies.
 
 ```txt
     unittest2==1.1.0
-    validator.py==1.2.5
 ```
 
 #### `README.md`
