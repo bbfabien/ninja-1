@@ -72,10 +72,10 @@ The repository contains:
 Here, the sources folder contains all the files needed to make the tests pass.
 
 ```python
-// addition.py
+# addition.py
 def addition(a, b):
     if isinstance(a, int) is not True or isinstance(b, int) is not True:
-        return 'Not a number'
+        return 'NaN'
 
     return int(a) + int(b)
 ```
@@ -94,11 +94,11 @@ class Test(unittest.TestCase):
     def setUp(self):
     	pass
 
-    def test_isNAN(self):
+    def test_NaN(self):
         a = 'p'
         b = 32
         result = code.addition(a, b)
-        self.assertEqual(result, 'NAN')
+        self.assertEqual(result, 'NaN')
 
     def test_number(self):
         a = 2
@@ -116,13 +116,11 @@ if __name__ == '__main__':
 	unittest.main()
 ```
 
-> **Note:** In the `test` directory we have a file `mocha.opts` that allow us to use the TDD style. For more information check [mocha options documentation](https://mochajs.org/#mochaopts).
-
 #### `.gitignore`
-As good practice, we ignore the node_modules folder.
+As good practice, we ignore the __pycache__ folders.
 
 ```
-    node_modules
+    __pycache__
 ```
 
 #### `meta.json`
@@ -131,33 +129,18 @@ The meta.json file tells where the editable files are.
 ```json 
     {
         "editables": [
-            "./sources/addition.js"
+            "./sources/addition.py"
         ]
     }
 ```
 > **Note:** You don't need to make all sources editable. It can be only one file, maybe two. Letting developers work with existing code.
 
-#### `package.json`
-The package.json describes the dependencies.
+#### `requirements.txt`
+The requirements.txt describes the dependencies.
 
-```json
-    {
-      "name": "javascript exercise sample",
-      "version": "1.0.0",
-      "description": "Coderpower javascript exercise template",
-      "scripts": {
-        "test": "mocha"
-      },
-      "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Coderpower/javascript-exercise-template.git"
-      },
-      "author": "Julian Farhi <julian@coderpower.com>",
-      "homepage": "https://github.com/Coderpower/javascript-exercise-template.git#readme",
-      "dependencies": {
-        "expect.js": "^0.3.1"
-      }
-    }
+```txt
+    unittest2==1.1.0
+    validator.py==1.2.5
 ```
 
 #### `README.md`
