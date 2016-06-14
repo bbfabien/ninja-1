@@ -116,6 +116,8 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
+> **Note:** You should prefix your tests functions by a letter in alphabetical order to respect tests orders. It is useful to match the exercise validation steps defined in Coderpower.
+
 #### `.gitignore`
 As good practice, we ignore the __pycache__ folders.
 
