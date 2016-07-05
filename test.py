@@ -4,7 +4,6 @@ import unittest
 import sources.addition as code
 
 class Test(unittest.TestCase):
-
     def setUp(self):
     	pass
 
@@ -24,7 +23,7 @@ class Test(unittest.TestCase):
         a = 23
         b = 54
         result = code.addition(a, b)
-        self.assertEqual(result, 77)
+        self.assertEqual(result, ['moe', 'larry'])
 
 if __name__ == '__main__':
 	unittest.main()
