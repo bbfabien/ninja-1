@@ -13,12 +13,6 @@ class Test(unittest.TestCase):
         result = code.addition(a, b)
         self.assertEqual(result, 'NaN')
 
-    def test_b_number(self):
-        a = 2
-        b = 5
-        result = code.addition(a, b)
-        self.assertTrue(isinstance(result, int))
-
     def test_c_correctResult(self):
         a = 23
         b = 54
