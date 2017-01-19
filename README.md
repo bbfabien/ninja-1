@@ -20,8 +20,11 @@ Vérifier, pour chaque colonmne, le nombre de valeurs manquantes. Pour cet exerc
 
 * null_values: nombre de valeur nulles
 * null_values_ratio: pourcentage de valeurs nulles
+* fonction: missing_values
 
 ## Visualiser les données
 Représenter les différentes colonnes sous forme d’histogrammes ou de distributions afin d’identifier les valeurs extrêmes et d’améliorer votre connaissance du dataset.
 
 Pour cet exercice, impressionnez-nous avec vos visualisation. Votre code pourra être revu par la société générale, un code de qualité sera apprécié.
+
+* Fonction: visualize
